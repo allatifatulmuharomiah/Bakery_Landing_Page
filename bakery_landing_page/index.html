@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <title>Landing Page Bakery</title>
+   
+   
+      <link rel="stylesheet" href="assets/style.css" />
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+      <!-- Logo dan Navigasi -->
+
+      <header class="navbar_n_logo">
+        <div class="logo">
+          <img src="assets\img\maskot2.png" alt="Sweet Delight Logo" />
+        </div>
+
+        <div class="title">
+            <h1>Sweet Delight Bakery</h1>
+        </div>
+
+        <nav class="nav-list">
+          <ul>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Order">Order</a></li>
+            <li><a href="#Reservation">Reservation</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Slide Gambar -->
+
+      <div class="container">
+        <div class="slideshow-content">
+            <div class="slide fade">
+                <div class="slide-number">1 / 3</div>
+                <img src="assets\img\breadcover1.jpg" alt="cover1">
+            </div>
+    
+            <div class="slide fade">
+                <div class="slide-number">2 / 3</div>
+                <img src="assets\img\breadcover2.jpg" alt="cover2">
+            </div>
+    
+            <div class="slide fade">
+                <div class="slide-number">3 / 3</div>
+                <img src="assets\img\breadcover3.jpg" alt="cover3">
+            </div>
+    
+            <a class="prev" onClick="navigateSlide(-1)">&#10094;</a>
+            <a class="next" onClick="navigateSlide(1)">&#10095;</a> 
+        </div>
+    
+        <div class="pagination">
+            <span class="dot" onClick="selectSlide(1)"></span>
+            <span class="dot" onClick="selectSlide(2)"></span>
+            <span class="dot" onClick="selectSlide(3)"></span>
+        </div>
+    </div>
+    
+    <script src="slide.js"></script>
+    
+      <main>
+        <div class="content">
+
+          <!-- Bakery Intro -->
+
+          <article id="Intro" class="box">
+            <div class="desc">
+              <h1 class="title">Sweet Delight Bakery</h1>
+              <p>
+                Sweet Delight is the destination for pastry lovers seeking delicious treats. 
+                From fresh bread to delightful cakes, we offer a variety of goodies to satisfy your palate. 
+                Discover unparalleled pleasure in every bite at Sweet Delight. 
+                Welcome, and enjoy an unforgettable culinary experience with us!
+              </p>
+            </div>
+            <div class="bread-image">
+              <img src="assets/img/breadcover4.jpg" alt="Fresh Bread" />
+            </div>
+          </article>
+
+          <!-- Menu -->
+        
+          <article id="Menu" class="box">
+            <h2>Menu</h2>
+            <div class="line1"> 
+              <section>
+                <h3>Croissant</h3>
+                <div class="Croi_img">
+                  <img src="assets/img/croissant_.jpg" alt="Croissant" />
+                </div>
+                <p>
+                  Croissant, a French pastry masterpiece, 
+                  embodies the perfect harmony of buttery richness and delicate flakiness.
+                </p>
+              </section>
+        
+              <section>
+                <h3>Donut</h3>
+                <div class="Croi_img">
+                  <img src="assets/img/donut.jpg" alt="Donut" />
+                </div>
+                <p>
+                  Donut, a delightful ring of fried dough that 
+                  captivates with its sweet and soft texture.
+                </p>
+              </section>
+        
+              <section>
+                <h3>Cookies</h3>
+                <div class="Croi_img">
+                  <img src="assets/img/cookies.jpg" alt="Cookies" />
+                </div>
+                <p>
+                  Cookies, beloved treats cherished by all, 
+                  come in endless varieties of flavors and textures. 
+                </p>
+              </section>
+            </div>  
+        
+            <div class="line2"> 
+              <section>
+                <h3>Pretzel</h3>
+                <div class="Croi_img">
+                  <img src="assets/img/pretzel.jpg" alt="Pretzel" />
+                </div>
+                <p>
+                  Pretzel, a twisted delight, is a savory snack loved for 
+                  its unique shape and satisfying crunch. 
+                </p>
+              </section>
+        
+              <section>
+                <h3>Wheat Bread</h3>
+                <div class="Croi_img">
+                  <img src="assets/img/wheat_bread.jpg" alt="Wheat Bread" />
+                </div>
+                <p>
+                  Wheat bread, a wholesome staple, is a nourishing choice 
+                  loved for its hearty flavor and nutritional benefits.
+                </p>
+              </section>
+        
+              <section>
+                <h3>Brownies</h3>
+                <div class="Croi_img">
+                  <img src="assets/img/brownies.jpg" alt="Brownies" />
+                </div>
+                <p>
+                  Brownies, decadent squares of indulgence, 
+                  are beloved treats adored for their rich chocolate flavor and fudgy texture.
+                </p>
+              </section>
+            </div>  
+          </article>
+
+          <!-- Order -->
+        
+          <article id="Order" class="box">
+            <section>
+              <img src="assets\img\delivery.png" alt="Delivery Logo" />
+              <h3>Delivery</h3>
+              <p>
+                Indulge in convenience as your favorite dishes arrive at your door with just a click!
+              </p>
+            </section>
+        
+            <section>
+              <img src="assets\img\pick.png" alt="Store logo" />
+              <h3>Pick Up</h3>
+              <p>
+                Skip the line, pick up your order at your convenience, 
+                and enjoy freshly prepared meals without the wait!
+              </p>
+            </section>
+        
+            <section>
+              <button>Order Now!</button>
+            </section>    
+          </article>
+
+          <!-- Reservation -->
+        
+          <article id="Reservation" class="box">
+            <h2>Reservation</h2>
+            <p>
+              Secure your spot and skip the wait! With a reservation, 
+              guarantee yourself a seamless experience, 
+              ensuring that your table or service is ready and waiting for you upon arrival. 
+            </p>
+            <button>Reserve Now!</button>
+          </article>
+        </div>
+        
+
+        <!-- Profile Aside -->
+        <aside>
+            <article class="profile_card">
+              <header>
+                <h2>Sweet Delight</h2>
+                <figure>
+                  <img src="assets/img/bakery.png" />
+                </figure>
+              </header>
+      
+              <section>
+                <h3>Contact Us!</h3>
+      
+                <table>
+                  <tr>
+                    <th>Instagram</th>
+                    <td>@Sweet_Delight</td>
+                  </tr>
+                  <tr>
+                    <th>ShopeeFood</th>
+                    <td>Sweet Delight</td>
+                  </tr>
+                  <tr>
+                    <th>GrabFood</th>
+                    <td>Sweet Delight</td>
+                  </tr>
+                </table>
+              </section>
+            </article>
+          </aside>
+
+      </main>
+
+    </body>
+
+    <!-- Footer -->
+    <footer> 
+        <p>Sweet Delight &#169; 2024, Official</p>
+    </footer>
+
+  </html>

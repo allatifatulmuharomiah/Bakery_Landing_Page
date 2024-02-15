@@ -1,0 +1,468 @@
+
+*,*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1C27B;
+  }
+
+  .container {
+    background-color: #F1C27B;
+    padding: 30px 0;
+}
+
+.slideshow-content {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.container img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.text {
+    color: #525252;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-content .slide-number {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/*bawah slider*/
+
+body .box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    gap: 1rem 2.1em;
+  }
+
+
+/* Navbar */
+header.navbar_n_logo {
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    background-color: #862B0D;
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    z-index: 9999;
+  }
+
+  header.navbar_n_logo {
+    display: flex;
+    align-items: center; 
+  }
+  
+  header.navbar_n_logo .logo img {
+    width: 100px;
+    margin-left: 1em; 
+  }
+  
+  header.navbar_n_logo .title {
+    margin-left: 5px; 
+    margin-right: 150px; 
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: white;
+  }
+  header.navbar_n_logo .nav-list ul {
+    padding-left: 1.50em;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+  }
+  header.navbar_n_logo .nav-list li {
+    list-style-type: none;
+  }
+  header.navbar_n_logo .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.50rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+  header.navbar_n_logo .nav-list li:hover a {
+    background-color: #FFF2CC;
+    color: black;
+  }
+
+/* Content */
+  main {
+    flex: 1;
+    width: 100%;  max-width: 1200px;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    display: flex;  align-items: center;
+  }
+
+  main .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  /* Content intro*/
+  main .content > #Intro {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    width: 1100px;
+    box-sizing: border-box;
+    background-color: #DFA67B;
+  }
+
+  main .content > [id]:not(#Intro) {
+    width: 850px;
+}
+
+  main .content #Intro .desc {
+    flex: 1;
+    min-width: 600px;
+  }
+  
+  main .content #Intro .desc .title {
+    margin-block: 1rem;
+    font-size: 2rem;
+  }
+
+  main .content #Intro .desc p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  
+  main .content #Intro .bread-image {
+    display: flex;
+  }
+  
+  main .content #Intro .bread-image img {
+    max-width: 270px;
+    margin-left: 2em; 
+  }
+
+  /* Content menu*/
+
+  main .content #Menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7E6C4; 
+  }
+
+  main .content #Menu h2 {
+    text-align: left; 
+    margin-block: 1rem;
+    font-size: 2rem;
+    font-family: 'Quicksand'
+  }
+
+  main .content #Menu h3 {
+    text-align: justify; 
+  }
+
+  main .content #Menu .line1{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  main .content #Menu .line2{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+
+  main .content #Menu section {
+    flex: 1 1; 
+    text-align: justify; 
+  }
+  
+  main .content #Menu section p {
+    max-height: 5em; 
+    max-width: 15em; 
+    overflow: hidden; 
+    font-size: 0.rem;
+  }
+  main .content #Menu .Croi_img{
+    display: flex;
+  }
+
+  main .content #Menu .Croi_img img{
+    width: 150px;
+    
+  }
+
+   /* Content order*/
+
+   main .content #Order {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center; 
+    justify-content: center;
+    background-color: #FEE8B0;
+    margin-right: 20px;
+  }
+
+  main .content #Order section {
+    flex: 1 1; 
+    margin-right: 23px;
+  }
+
+  main .content #Order section p {
+    max-height: 5em; 
+    width: 19em; 
+    overflow: hidden; 
+    font-size: 0.9rem;
+  }
+
+  main .content #Order img{
+    display: flex;
+  }
+
+  main .content #Order img{
+    width: 70px;
+    margin: auto;
+  }
+
+  main .content #Order button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: #c75b30;
+  }
+  main .content #Order button:hover {
+    background-color: #862B0D;
+    color: white;
+  }
+
+
+  /* Reservation */
+
+  main .content #Reservation {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #DFA67B;
+    
+  }
+
+  main .content #Reservation h2 {
+    margin-block: 1rem;
+    font-size: 2rem;
+    color : white;
+  }
+
+  main .content #Reservation p{
+    margin-block: 1rem;
+    font-size: 1rem;
+    text-align: center; 
+  }
+
+  main .content #Reservation button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    background-color: #c75b30;
+  }
+  main .content #Reservation button:hover {
+    background-color: #FFF2CC;
+    color: black;
+  }
+
+  /* Aside */
+  main aside {
+    flex: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: -225px;
+    background-color: #862B0D;
+    
+  }
+
+  main aside h2{
+    margin-block: 1rem;
+    font-size: 1.4rem;
+    color : white;
+    text-align: center;
+  }
+
+  main aside h3{
+    color : white;
+  }
+
+  main aside table{
+    color : white;
+    text-align: justify;
+  }
+
+  main aside figure img{
+    width: 125px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 7px;
+    color: white;
+    background-color: #862B0D;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 768px) {
+    header.navbar_n_logo .title {
+      margin-right: 0; 
+      text-align: center; 
+      margin-bottom: 1rem; 
+    }
+  
+    header.navbar_n_logo .nav-list ul {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 1rem; 
+    }
+  
+    main {
+      padding: 1rem; 
+    }
+  
+    main .content > [id]:not(#Intro) {
+      width: 100%; 
+      margin-bottom: 2rem; 
+    }
+  
+    main .content #Intro .desc {
+      min-width: auto;
+      text-align: center; 
+    }
+  
+    main .content #Intro .bread-image img {
+      max-width: 100%; 
+      margin-left: 0; 
+    }
+  
+    main aside {
+      margin-left: 0; 
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    header.navbar_n_logo .title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem; 
+    }
+  
+    header.navbar_n_logo .nav-list ul {
+      gap: 0.5rem; 
+    }
+  
+    main {
+      padding: 0.5rem;
+    }
+  
+    main .content > [id]:not(#Intro) {
+      width: 100%; 
+      margin-bottom: 1rem; 
+    }
+  
+    main .content #Intro .desc {
+      font-size: 1rem; 
+      text-align: center; 
+    }
+  
+    main .content #Intro .bread-image img {
+      max-width: 100%; 
+      margin-left: 0; 
+    }
+  
+    main aside {
+      margin-left: 0; 
+    }
+  }
+  
+
+
